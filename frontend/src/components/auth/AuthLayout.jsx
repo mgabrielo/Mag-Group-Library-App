@@ -31,7 +31,7 @@ const AuthLayout = ({
 
   useEffect(() => {
     if (currentUser && isAuthenticated) {
-      navigate("/news-by-tag");
+      navigate("/");
     }
   }, [currentUser, isAuthenticated]);
 
@@ -61,9 +61,9 @@ const AuthLayout = ({
           }}
         >
           <Typography variant="h3" sx={{ textAlign: "center" }}>
-            Welcome to News App
+            Welcome to Library App
           </Typography>
-          <Typography variant="body">Share the News Experience</Typography>
+          <Typography variant="body">Share the Library Experience</Typography>
         </Box>
       </Grid>
       <Grid item xs={12}>

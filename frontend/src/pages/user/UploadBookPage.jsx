@@ -44,10 +44,6 @@ const UploadBookPage = () => {
     },
   });
 
-  const availableTags = [
-    // ...new Set(news.flatMap((newsItem) => newsItem.tags || [])),
-  ];
-
   const availableGenre = [
     ...new Set(allBooks.flatMap((book) => book.genre || [])),
   ];
@@ -120,10 +116,10 @@ const UploadBookPage = () => {
       setSelectedImage(null);
       setPreviewImage("");
       navigate("/");
-      toast.success("News Saved successfully!");
+      toast.success("Saved successfully!");
     } catch (error) {
-      console.error("Error adding news:", error);
-      toast.error("Failed to add news!");
+      console.error("Error adding data:", error);
+      toast.error("Failed to add data!");
     }
   };
 

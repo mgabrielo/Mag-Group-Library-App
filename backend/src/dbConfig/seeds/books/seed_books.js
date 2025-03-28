@@ -30,7 +30,6 @@ export const seed = async function (knex) {
       );
     }
 
-    // Sample news data
     let booksData = [];
     const images = getImages();
 

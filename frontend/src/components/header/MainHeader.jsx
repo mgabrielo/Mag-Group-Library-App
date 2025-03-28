@@ -16,7 +16,7 @@ const MainHeader = ({ navigate, currentUser, setHandleOpen }) => {
       >
         <Typography
           component={Link}
-          to={"/news"}
+          to={"/"}
           variant="h6"
           noWrap
           sx={{

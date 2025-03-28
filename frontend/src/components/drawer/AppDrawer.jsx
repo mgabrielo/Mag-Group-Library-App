@@ -11,7 +11,7 @@ const AppDrawer = ({
 }) => {
   const filteredDrawerItems = currentUser
     ? drawerItems.filter((item) => !["Login", "Register"].includes(item.label))
-    : drawerItems.filter((item) => item.label !== "News By Tag");
+    : drawerItems.filter((item) => item.label !== "Borrowed");
   return (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>

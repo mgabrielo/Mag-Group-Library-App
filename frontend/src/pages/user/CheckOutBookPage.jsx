@@ -60,7 +60,6 @@ const CheckOutBookPage = () => {
         Checked Out Books Page
       </Typography>
 
-      {/* News Grid */}
       <Grid container spacing={3}>
         {availableBooks &&
           availableBooks.length > 0 &&

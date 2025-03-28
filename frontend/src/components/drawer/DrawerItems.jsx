@@ -1,9 +1,5 @@
 export const drawerItems = [
   {
-    label: "Home",
-    link: "/news",
-  },
-  {
     label: "Login",
     link: "/login",
   },

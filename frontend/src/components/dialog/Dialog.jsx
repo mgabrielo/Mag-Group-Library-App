@@ -10,7 +10,6 @@ export default function DialogBox({
   isOpen,
   handleLogout,
   setIsOpen,
-  handleNewsDelete,
   trigger,
 }) {
   const [open, setOpen] = React.useState(false);
@@ -27,10 +26,6 @@ export default function DialogBox({
   const handleAction = (e) => {
     if (trigger == "logout") {
       handleLogout(e);
-      handleClose();
-    } else if (trigger == "deleteNews") {
-      const closed = true;
-      handleNewsDelete({ e, closed });
       handleClose();
     }
   };
@@ -51,13 +46,10 @@ export default function DialogBox({
       >
         <DialogTitle id="alert-dialog-title">
           {trigger == "logout" && "Do You Want to Sign out ?"}
-          {trigger === "deleteNews" && "Do You Want To Delete This News"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             {trigger == "logout" && "Are You Sure You Want to Sign out ?"}
-            {trigger === "deleteNews" &&
-              "Are You Sure You Want To Delete This News"}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
